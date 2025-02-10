@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antony - Desenvolvedor Full-Stack</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        h1 {
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        .techs {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .tech {
+            background: #1e1e1e;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .tech:hover {
+            background: #6200ea;
+            transform: scale(1.1);
+        }
+        #message {
+            font-size: 1rem;
+            margin-top: 30px;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>👋 Olá, sou Antony</h1>
+        <p>Desenvolvedor Full-Stack apaixonado por tecnologia!</p>
+        <div class="techs">
+            <div class="tech">.NET</div>
+            <div class="tech">Angular</div>
+            <div class="tech">Node.js</div>
+            <div class="tech">Docker</div>
+            <div class="tech">Jasmine</div>
+            <div class="tech">MySQL</div>
+            <div class="tech">PostgreSQL</div>
+            <div class="tech">RabbitMQ</div>
+            <div class="tech">Laravel</div>
+            <div class="tech">Vue.js</div>
+        </div>
+        <p id="message">🚀 Sempre aprendendo e evoluindo!</p>
+    </div>
+
+    <script>
+        setTimeout(() => {
+            document.getElementById('message').style.opacity = 1;
+        }, 1500);
+    </script>
+</body>
+</html>
